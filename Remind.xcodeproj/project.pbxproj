@@ -17,6 +17,7 @@
 		0FA3471220DB67FD0006E322 /* TimeAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FA3470F20DB67FB0006E322 /* TimeAlert.png */; };
 		0FA3471320DB67FD0006E322 /* DateAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FA3471020DB67FD0006E322 /* DateAlert.png */; };
 		0FA3471520DB73490006E322 /* UNService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA3471420DB73490006E322 /* UNService.swift */; };
+		0FA3471720DB7C230006E322 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA3471620DB7C230006E322 /* AlertService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		0FA3470F20DB67FB0006E322 /* TimeAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TimeAlert.png; sourceTree = "<group>"; };
 		0FA3471020DB67FD0006E322 /* DateAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DateAlert.png; sourceTree = "<group>"; };
 		0FA3471420DB73490006E322 /* UNService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNService.swift; sourceTree = "<group>"; };
+		0FA3471620DB7C230006E322 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				0FA3471420DB73490006E322 /* UNService.swift */,
+				0FA3471620DB7C230006E322 /* AlertService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				0FA346F820DB45610006E322 /* ViewController.swift in Sources */,
 				0FA3471520DB73490006E322 /* UNService.swift in Sources */,
 				0FA346F620DB45610006E322 /* AppDelegate.swift in Sources */,
+				0FA3471720DB7C230006E322 /* AlertService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
