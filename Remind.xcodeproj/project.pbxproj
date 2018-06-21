@@ -12,6 +12,10 @@
 		0FA346FB20DB45610006E322 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA346F920DB45610006E322 /* Main.storyboard */; };
 		0FA346FD20DB45630006E322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FA346FC20DB45630006E322 /* Assets.xcassets */; };
 		0FA3470020DB45630006E322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA346FE20DB45630006E322 /* LaunchScreen.storyboard */; };
+		0FA3470C20DB60800006E322 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA3470B20DB60800006E322 /* ShadowView.swift */; };
+		0FA3471120DB67FD0006E322 /* LocationAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FA3470E20DB67FA0006E322 /* LocationAlert.png */; };
+		0FA3471220DB67FD0006E322 /* TimeAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FA3470F20DB67FB0006E322 /* TimeAlert.png */; };
+		0FA3471320DB67FD0006E322 /* DateAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FA3471020DB67FD0006E322 /* DateAlert.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		0FA346FC20DB45630006E322 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FA346FF20DB45630006E322 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FA3470120DB45630006E322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FA3470B20DB60800006E322 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		0FA3470E20DB67FA0006E322 /* LocationAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LocationAlert.png; sourceTree = "<group>"; };
+		0FA3470F20DB67FB0006E322 /* TimeAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TimeAlert.png; sourceTree = "<group>"; };
+		0FA3471020DB67FD0006E322 /* DateAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DateAlert.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,58 @@
 		0FA346F420DB45610006E322 /* Remind */ = {
 			isa = PBXGroup;
 			children = (
-				0FA346F520DB45610006E322 /* AppDelegate.swift */,
-				0FA346F720DB45610006E322 /* ViewController.swift */,
+				0FA3470120DB45630006E322 /* Info.plist */,
+				0FA3470920DB51DF0006E322 /* Models */,
+				0FA3470720DB50B50006E322 /* Views */,
+				0FA3470820DB50C30006E322 /* Controllers */,
+				0FA3470A20DB51E50006E322 /* Services */,
+			);
+			path = Remind;
+			sourceTree = "<group>";
+		};
+		0FA3470720DB50B50006E322 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0FA3470D20DB67BD0006E322 /* NotificationAssets */,
 				0FA346F920DB45610006E322 /* Main.storyboard */,
 				0FA346FC20DB45630006E322 /* Assets.xcassets */,
 				0FA346FE20DB45630006E322 /* LaunchScreen.storyboard */,
-				0FA3470120DB45630006E322 /* Info.plist */,
+				0FA3470B20DB60800006E322 /* ShadowView.swift */,
 			);
-			path = Remind;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0FA3470820DB50C30006E322 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0FA346F720DB45610006E322 /* ViewController.swift */,
+				0FA346F520DB45610006E322 /* AppDelegate.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0FA3470920DB51DF0006E322 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0FA3470A20DB51E50006E322 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0FA3470D20DB67BD0006E322 /* NotificationAssets */ = {
+			isa = PBXGroup;
+			children = (
+				0FA3471020DB67FD0006E322 /* DateAlert.png */,
+				0FA3470E20DB67FA0006E322 /* LocationAlert.png */,
+				0FA3470F20DB67FB0006E322 /* TimeAlert.png */,
+			);
+			path = NotificationAssets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +175,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FA3470020DB45630006E322 /* LaunchScreen.storyboard in Resources */,
+				0FA3471120DB67FD0006E322 /* LocationAlert.png in Resources */,
+				0FA3471220DB67FD0006E322 /* TimeAlert.png in Resources */,
 				0FA346FD20DB45630006E322 /* Assets.xcassets in Resources */,
+				0FA3471320DB67FD0006E322 /* DateAlert.png in Resources */,
 				0FA346FB20DB45610006E322 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FA3470C20DB60800006E322 /* ShadowView.swift in Sources */,
 				0FA346F820DB45610006E322 /* ViewController.swift in Sources */,
 				0FA346F620DB45610006E322 /* AppDelegate.swift in Sources */,
 			);
